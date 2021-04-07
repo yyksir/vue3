@@ -1,0 +1,437 @@
+@charset "UTF-8";
+// 引入persagy字体库
+@font-face {
+	font-family: 'Persagy-Bold';
+	src        : url('./persagyFont/PersagyBold.ttf');
+}
+
+@font-face {
+	font-family: 'Persagy-Regular';
+	src        : url('./persagyFont/PersagyRegular.ttf');
+}
+
+// 公共样式
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+i,
+b,
+button {
+	margin        : 0;
+	padding       : 0;
+	border        : 0;
+	outline       : 0;
+	font-weight   : inherit;
+	font-style    : inherit;
+	vertical-align: baseline
+}
+
+html {
+	width                   : 100%;
+	height                  : 100%;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust    : 100%
+}
+
+body {
+	width      : 100%;
+	height     : 100%;
+	position   : relative;
+	margin     : 0;
+	font-size  : 14px;
+	font-family: Arial, "Microsoft Yahei", sans-serif;
+	color      : #333
+}
+
+img {
+	border: none
+}
+
+td,
+th {
+	padding: 0
+}
+
+i {
+	font-style: normal
+}
+
+textarea {
+	resize: none
+}
+
+ul,
+li {
+	list-style: none
+}
+
+b,
+strong {
+	font-weight: 700
+}
+
+input {
+	line-height: normal
+}
+
+a:active,
+a:hover {
+	outline: 0
+}
+
+a {
+	background-color   : transparent;
+	text-decoration    : none;
+	// color           : inherit
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+	padding: 0;
+	border : 0
+}
+
+button,
+input,
+select,
+textarea {
+	color     : inherit;
+	font      : inherit;
+	margin    : 0;
+	padding   : 0;
+	outline   : none;
+	background: inherit
+}
+
+input:-ms-input-placeholder {
+	color: #cacaca
+}
+
+input::-webkit-input-placeholder {
+	color: #cacaca
+}
+
+input::-moz-placeholder {
+	color: #cacaca
+}
+
+input:-moz-placeholder {
+	color: #cacaca
+}
+
+textarea:-ms-input-placeholder {
+	color: #cacaca
+}
+
+textarea::-webkit-input-placeholder {
+	color: #cacaca
+}
+
+textarea::-moz-placeholder {
+	color: #cacaca
+}
+
+textarea:-moz-placeholder {
+	color: #cacaca
+}
+
+p,
+ul,
+li,
+span,
+em,
+i,
+img,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+dl,
+dt,
+dd,
+b {
+	margin    : 0;
+	padding   : 0;
+	border    : 0;
+	font-size : 100%;
+	font-style: normal
+}
+
+i,
+b {
+	font-style : normal;
+	font-weight: normal
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary {
+	display: block
+}
+
+button[disabled],
+html input[disabled] {
+	cursor: default
+}
+
+[hidden] {
+	display: none
+}
+
+::-ms-clear,
+::-ms-reveal {
+	display: none
+}
+
+:after,
+:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing   : border-box;
+	box-sizing        : border-box
+}
+
+body ::-webkit-scrollbar {
+	width : 5px;
+	height: 5px
+}
+
+body ::-webkit-scrollbar-track {
+	background-color     : rgba(0, 0, 0, 0);
+	-webkit-border-radius: 3px
+}
+
+body ::-webkit-scrollbar-thumb {
+	-webkit-border-radius: 3px;
+	background           : #d1d1d1;
+	border               : 1px solid #d1d1d1
+}
+
+body ::-webkit-scrollbar-thumb:hover {
+	background: #d1d1d1;
+	border    : 1px solid #d1d1d1
+}
+
+#app {
+	height: 100%;
+}
+
+.text-elli {
+	overflow     : hidden;
+	text-overflow: ellipsis;
+	white-space  : nowrap;
+}
+
+/* 全局加载 */
+.fullLoading {
+	width   : 100%;
+	height  : 100%;
+	top     : 0;
+	left    : 0;
+	position: fixed;
+	z-index : 9999;
+}
+
+.fullLoading>.ant-spin-spinning {
+	position: absolute;
+	top     : 50%;
+	left    : 50%;
+
+}
+
+body ::-webkit-scrollbar-thumb:hover {
+	background: #d1d1d1;
+	border    : 1px solid #d1d1d1
+}
+
+#app {
+	height: 100%;
+}
+
+/* 全局加载 */
+.fullLoading {
+	width   : 100%;
+	height  : 100%;
+	top     : 0;
+	left    : 0;
+	position: fixed;
+	z-index : 9999;
+}
+
+.fullLoading>.ant-spin-spinning {
+	position: absolute;
+	top     : 50%;
+	left    : 50%;
+
+}
+
+// 修改sitch颜色
+.ant-switch-checked {
+	background-color: #68c5b3 !important;
+}
+
+// 修改进度条颜色
+.ant-progress-status-exception .ant-progress-circle-path {
+	stroke: #ED2E38 !important;
+}
+
+.ant-progress-status-success .ant-progress-circle-path {
+	stroke: #2AC58B !important;
+}
+
+// 修改上传
+.ant-upload-list-item-info {
+	padding: 0 18px 0 4px !important;
+}
+
+// 修改message
+.ant-message {
+	.ant-message-notice-content {
+		height     : 64px;
+		line-height: 64px;
+		min-width  : 380px;
+		box-shadow : 0 1px 4px rgba(0, 0, 0, 0.16);
+		font-size  : 16px;
+		padding    : 0 !important;
+		color      : #fff;
+
+		.anticon {
+			color: #fff;
+		}
+
+		.ant-message-success {
+			background: #3bacb2;
+		}
+
+		.ant-message-error {
+			background: #d44d44;
+		}
+
+		.ant-message-warning {
+			background: #d44d44;
+		}
+	}
+}
+
+// 修改确认弹框
+// .ant-modal{
+// 	top: 35%!important;
+// 	width: 440px;
+// 	transition:none!important;
+// }
+// .ant-modal-confirm,.ant-modal-body{
+// 	padding:0!important;
+// 	width: 440px!important;
+// 	margin: 0 auto;
+// }
+// .ant-modal-confirm-body{
+// 	background: #5d6bba!important;
+// 	background: -webkit-linear-gradient(to left to top, #5d6bba 0, #5c649c 100%)!important;
+// }
+// .ant-modal-confirm-title,.ant-modal-confirm-content{
+// 	color: #fff !important;
+// }
+// .ant-modal-confirm-btns{
+// 	width: 100%;
+// 	text-align: center;
+// 	margin: 20px 0;
+// 	transition:none!important;
+// }
+// .ant-modal-content{
+// 	width: 440px;
+// }
+// .ant-modal-confirm-btns{
+// 	margin-top: 20px!important;
+// 	.ant-btn{
+// 		width: 80px;
+// 	}
+// 	.ant-btn-default{margin-right: 20px;}
+// 	.ant-btn-primary{margin-left: 20px!important;}
+// 	.ant-btn-danger{
+// 		background-color: #d44d44!important;
+// 		color: #f5f5f5!important;
+// 	}
+// 	transition:none!important;
+// }
+// .ant-modal-confirm .anticon{display: none;}
+// .ant-modal-confirm-title{text-align: center;
+// line-height: 52px!important;
+// font-size: 20px!important;
+// padding: 0 60px;
+// padding-top: 58px;
+// }
+// .ant-modal-confirm-content{
+// 	padding: 0 60px;
+// 	font-size: 14px;
+// 	text-align: center;
+// 	margin: 0!important;
+// 	padding-bottom: 70px;
+// }
+.g-loading {
+	z-index: 999999 !important;
+}
+
+.pdisabled {
+	pointer-events: none;
+	cursor        : default !important;
+	opacity       : .3;
+}
+
+::selection{
+	background: #0091FF!important;
+}
